@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Chat</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="chat active">
+        <div class="chat__options">
+          <button class="options__item options__item_settings" type="button">
+            Настройки
+          </button>
+          <button class="options__item options__item_exit" type="button">
+            Выйти
+          </button>
+        </div>
+        <div class="chat__screen">
+          <template class="tmpl-message">
+            <p class="message__text"></p>
+            <p class="message__date"></p>
+          </template>
+        </div>
+        <form class="chat__form" onsubmit="return false" action="">
+          <input
+            class="form__input-message"
+            type="text"
+            placeholder="Сообщение..."
+          />
+          <input class="form__button" type="submit" value=">" />
+        </form>
+      </div>
+      <div class="settings">
+        <div class="settings__header">
+          <p class="settings__title">Настройки</p>
+          <button class="settings__btn" type="button"></button>
+        </div>
+        <p class="form-name__title">Имя в чате:</p>
+        <form class="form-name" action="" onsubmit="return false">
+          <input
+            class="form-name__input"
+            type="text"
+            placeholder="Введите имя"
+          />
+          <input class="form-name__btn" type="submit" value=">" />
+        </form>
+      </div>
+    </div>
+    
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
