@@ -28,32 +28,49 @@
             <p class="message__date"></p>
           </template>
         </div>
-        <form class="chat__form" onsubmit="return false" action="">
-          <input
-            class="form__input-message"
-            type="text"
-            placeholder="Сообщение..."
-          />
+        <form class="chat__form"  action="">
+          <input class="form__input-message" type="text" placeholder="Сообщение..." />
           <input class="form__button" type="submit" value=">" />
         </form>
       </div>
       <div class="settings">
         <div class="settings__header">
           <p class="settings__title">Настройки</p>
-          <button class="settings__btn" type="button"></button>
+          <button class="settings__close-btn" type="button"></button>
         </div>
-        <p class="form-name__title">Имя в чате:</p>
-        <form class="form-name" action="" onsubmit="return false">
-          <input
-            class="form-name__input"
-            type="text"
-            placeholder="Введите имя"
-          />
+        <p class="form-name__title" >Имя в чате:</p>
+        <form class="form-name" action="">
+          <input class="form-name__input" type="text" placeholder="Введите имя"/>
           <input class="form-name__btn" type="submit" value=">" />
         </form>
+       </div>
+      <div class="chat__authorization">
+        <div class="authorization__header">
+          <p class="authorization__title">Авторизация</p>
+          <button class="authorization__close-btn" type="button"></button>
+          </div>
+        <div class="authorization__wrapper">
+          <p class="form-authorization__title">Почта:</p>
+          <form class="form-authorization" action="">
+          <input class="form-authorization__input" type="email" />
+          <input class="form-authorization__btn" type="submit" value="Получить код" />
+        </form>
+        </div>
+      </div>
+      <div class="chat__confirmation">
+        <div class="confirmation__header">
+          <p class="confirmation__title">Подтверждение</p>
+          <button class="confirmation__close-btn" type="button"></button>
+          </div>
+        <div class="confirmation__wrapper">
+          <p class="form-confirmation__title">Код:</p>
+          <form class="form-confirmation" action="">
+          <input class="form-confirmation__input" type="text" />
+          <input class="form-confirmation__btn" type="submit" value="Войти" />
+        </form>
+        </div>
       </div>
     </div>
-    
     <script type="module" src="./js/main.js"></script>
   </body>
 </html>
